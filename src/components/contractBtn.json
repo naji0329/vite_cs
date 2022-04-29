@@ -1,0 +1,74 @@
+{
+  "type": "button",
+  "label": "Bottom Popup - Oversized",
+  "level": "danger",
+  "actionType": "drawer",
+  "drawer": {
+    "position": "bottom",
+    "size": "xl",
+    "title" : "Create Contract",
+    "body": {
+      "type": "form",
+      "api": "",
+      "title": "Create Contract",
+      "mode": "inline",
+      "body": [
+        {
+          "type": "input-text",
+          "name" : "contract_title",
+          "required": true,
+          "placeholder": "Please enter your Contract Title",
+          "label" : "Contract Title",
+        },
+        {
+          "type" : "group",
+          "body" : [
+            {
+              "type": "input-text",
+          "name" : "contract_type",
+          "required": true,
+          "placeholder": "Please enter your contract type",
+          "label" : "Contract Type",
+            },
+            {
+              "type": "input-text",
+          "name" : "contract_num",
+          "required": true,
+          "placeholder": "Please enter your contract num",
+          "label" : "Contract Number",
+            },
+          ]
+        },
+        {
+          "type" : "group",
+          "body" : [
+            {
+              "type": "input-text",
+          "name" : "entrust_unit",
+          "required": true,
+          "placeholder": "Please enter your entrust unit",
+          "label" : "Entrust Unit",
+            },
+            {
+              "type": "input-date",
+          "name" : "issue_date",
+          "required": true,
+          "placeholder": "Please select date",
+          "label" : "Issue Date",
+            },
+          ]
+        },
+        {
+          "type": "textarea",
+      "name" : "issue_date",
+      "label" : "Joint Content",
+        },
+        {
+          "type": "input-image",
+          "name" : "annex",
+          "label" : "Annex",
+        }
+      ]
+    }
+  }
+}

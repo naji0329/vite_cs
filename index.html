@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>amis demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="node_modules/amis/sdk/antd.css" />
+    <link rel="stylesheet" href="node_modules/amis/sdk/helper.css" />
+    <link rel="stylesheet" href="node_modules/amis/sdk/iconfont.css" />
+    <style>
+      html,
+      body,
+      .app-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="app-wrapper"></div>
+    <script src="node_modules/amis/sdk/sdk.js"></script>
+    <script type='module' src="./src/main.ts"></script>
+  </body>
+  <script>
+    const detect_com = document.querySelector(".detect_com");
+      const detect_dia = document.querySelector(".detect_dia")
+      detect_com.addEventListener('click', function() {
+        alert('ss'),
+        detect_dia.innerHTML = "ssss";
+      });    
+  </script>   
+</html>

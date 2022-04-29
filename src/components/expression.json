@@ -1,0 +1,17 @@
+{
+    "type": "breadcrumb",
+    "className": "m-3.5",
+    "items": [
+      {
+        "label": "主页",
+        "href": "#",
+        "icon": "fa fa-home"
+      },
+      {
+        "label": ""
+      },
+      {
+        "label": ""
+      }
+    ]
+  }

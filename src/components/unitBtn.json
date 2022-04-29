@@ -1,0 +1,85 @@
+{
+  "label": "样品上传",
+  "actionType": "dialog",
+  "dialog": {
+    "title": "样品上传",
+    "size": "full",
+    "className": "dtect_dia",
+    "body": {
+      "type": "crud",
+      "width": 500,
+      "draggable": true,
+      "api": "/api/sss/sample?waitSeconds=1",
+      "perPage": 15,
+      "keepItemSelectionOnPageChange": true,
+      "maxKeepItemSelectionLength": 11,
+      "labelTpl": "${id} ${engine}",
+      "orderBy": "id",
+      "orderDir": "asc",
+      "bulkActions": [
+        {
+          "type": "button",
+          "level": "danger",
+          "label": "批量删除",
+          "actionType": "ajax",
+          "api": "delete:/api/sample/${ids|raw}",
+          "confirmText": "确定要批量删除?"
+          
+        }
+      ],
+      "quickSaveApi": "/api/sample/bulkUpdate",
+      "quickSaveItemApi": "/api/sample/$id",
+      "filterTogglable": true,
+      "headerToolbar": [
+        "bulkActions"
+      ],
+      "footerToolbar": ["statistics", "switch-per-page", "pagination"],
+      "columns": [
+        {
+          "name": "id",
+          "label": "协议编号",
+          "width": 20,
+          "sortable": true,
+          "type": "text",
+          "toggled": true,
+          "remark": "Bla bla Bla",
+          "fixed": "left"
+        },
+        {
+          "name": "unit",
+          "label": "委托单位名称",
+          "sortable": true,
+          "width": 50,
+          "type": "text",
+          "toggled": true,
+          "fixed": "center"
+        },
+        {
+          "type": "operate",
+          "label": "操作",
+          "width": 10,
+          "fixed": "right",
+          "buttons": [
+            {
+              "type": "button",
+              "icon": "fa fa-times text-danger",
+              "actionType": "ajax",
+              "tooltip": "删除",
+              "confirmText": "您确认要删除?",
+              "api": "delete:/api/sample/$id"
+            },
+            {
+              "type": "button",
+              "icon": "fa fa-times text-danger",
+              "actionType": "ajax",
+              "tooltip": "删除",
+              "confirmText": "您确认要删除?",
+              "api": "delete:/api/sample/$id"
+            }
+          ],
+          "toggled": true
+        }
+      ]
+    }
+  }
+}

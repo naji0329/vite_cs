@@ -1,0 +1,71 @@
+
+    {
+        "label": "修改协议",
+      "actionType": "dialog",
+      "level" : "primary",
+      "dialog": {
+        "size": "full",
+        "title" : "修改协议",
+        "body": {
+          "type": "form",
+          "body": [
+            {
+              "type": "input-text",
+              "name" : "name",
+              "required": true,
+              "placeholder": "Please enter your Contract Title",
+              "className": "text-7xl",
+              "label" : "样品名称"
+            },
+            {
+              "type" : "group",
+              "body" : [
+                {
+                  "type": "input-text",
+                  "name" : "detect_type",
+                  "required": true,
+                  "placeholder": "Please enter your contract type",
+                  "label" : "检测类型"
+                },
+                {
+                  "type": "input-text",
+                  "name" : "id",
+                  "required": true,
+                  "placeholder": "Please enter your contract num",
+                  "label" : "协议编号"
+                }
+              ]
+            },
+            {
+              "type" : "group",
+              "body" : [
+                {
+                  "type": "input-text",
+                  "name" : "name_unit",
+                  "required": true,
+                  "placeholder": "Please enter your entrust unit",
+                  "label" : "委托单位名称"
+                },
+                {
+                  "type": "input-date",
+              "name" : "date",
+              "required": true,
+              "placeholder": "Please select date",
+              "label" : "创建日期"
+                }
+              ]
+            },
+            {
+              "type": "textarea",
+              "name" : "issue_date",
+              "label" : "Joint Content"
+            },
+            {
+              "type": "input-image",
+              "name" : "annex",
+              "label" : "Annex"
+            }
+          ]
+        }
+      }
+    }

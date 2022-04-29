@@ -1,0 +1,28 @@
+{
+  "type": "nav",
+  "stacked": true,
+  "size": "xl",
+  "links": [
+    {
+      "label": "FILES",
+      "className": "text-3xl font-bold bg-red",
+      "icon": "fa fa-desktop",
+      "disabled": true
+    },
+    {
+      "label": "检测协议",
+      "to": "?id=1",
+      "icon": "fa fa-list-alt"
+    },
+    {
+      "label": "我的审批",     
+      "to": "?id=2",
+      "icon": "fa fa-list-alt"         
+    },
+    {
+      "label": "全部审批",
+      "to": "?id=3",
+      "icon": "fa fa-list-alt"
+    }
+  ]
+}

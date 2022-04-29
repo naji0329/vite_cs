@@ -1,0 +1,64 @@
+{
+  "type": "button",
+  "label": "Add Unit",
+  "level": "primary",
+  "align": "right",
+  "actionType": "dialog",
+  "dialog": {
+    "size": "lg",
+    "title": "Add Unit",
+    "body":{
+      "type": "crud",
+      "width": 500,
+      "draggable": true,
+      "api": "/api/ddd/sample?waitSeconds=1",
+      "keepItemSelectionOnPageChange": true,
+      "maxKeepItemSelectionLength": 11,
+      "labelTpl": "${id} ${engine}",
+      "orderBy": "id",
+      "orderDir": "asc",
+      "quickSaveApi": "/api/sample/bulkUpdate",
+      "quickSaveItemApi": "/api/sample/$id",
+      "filterTogglable": true,
+      "headerToolbar": [
+        {
+          "type": "button",
+          "label": "New Built",
+          "level": "primary",
+          "align": "left",
+          "actionType": "dialog",
+          "dialog": {
+            "size": "lg",
+            "title": "Add Unit",
+            "body": ""
+          }
+        }
+      ],
+      "footerToolbar": ["statistics", "switch-per-page", "pagination"],
+      "columns": [
+        {
+          "name": "id",
+          "label": "协议编号",
+          "width": 20,
+          "sortable": true,
+          "type": "text",
+          "toggled": true,
+          "remark": "Bla bla Bla",
+          "fixed": "left"
+        },
+        {
+          "name": "unit",
+          "label": "委托单位名称",
+          "sortable": true,
+          "width": 50,
+          "type": "text",
+          "toggled": true,
+          "fixed": "center"
+        },
+        {
+          "toggled": true
+        }
+      ]
+    }
+  }
+}

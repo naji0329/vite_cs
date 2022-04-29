@@ -1,0 +1,6 @@
+{
+  "type": "button",
+  "label": "Configuration Unit",
+  "level": "primary",
+  "onUpdate": "this.onclick = event => { alert('aaa'); "
+}

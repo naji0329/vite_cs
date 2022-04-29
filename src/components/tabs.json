@@ -1,0 +1,31 @@
+{
+  "type": "tabs",
+  "mode": "chrome",
+  "tabs": [
+    {
+      "title": "全部",
+      "hash": "all",
+      "body": ""
+    },
+    {
+      "title": "待审批",
+      "hash": "pend_sub",
+      "body": ""
+    },
+    {
+      "title": "审批中",
+      "hash": "pend_appro",
+      "body": ""
+    },
+    {
+      "title": "已通过",
+      "hash": "pass",
+      "body": ""
+    },
+    {
+      "title": "已驳回",
+      "hash": "reject",
+      "body": ""
+    }
+  ]
+}
